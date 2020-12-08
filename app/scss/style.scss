@@ -852,4 +852,34 @@
     }
 }
 
+.pagination {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.pagination__list {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination__list--item {
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    margin: 0 4px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #c4c4c4;
+
+    .activ {
+
+        border: 1px solid #1c62cd;
+        color: #1c62cd;
+    }
+
+
+    a {
+        display: block;
+    }
+}
+
 @import "media";
