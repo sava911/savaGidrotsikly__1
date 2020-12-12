@@ -25,4 +25,7 @@ $(function () {
         prevArrow: '<button><img class="products__slider-arrow products__slider-arrow__prev" src="images/arrow-black-left.svg" alt=""></button>',
         nextArrow: '<button><img class="products__slider-arrow products__slider-arrow__nex" src="images/arrow-black-right.svg" alt=""></button>',
     });
+
+
+    $('.filter-style').styler();
 });

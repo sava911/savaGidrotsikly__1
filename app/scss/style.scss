@@ -1,6 +1,9 @@
 @import "global";
 @import "vars";
 @import "slick";
+@import "rengSlider";
+@import "formstyler";
+@import "formstylerTheme";
 @import "fonts";
 
 .header__top {
@@ -912,6 +915,9 @@
 .aside-filter__tab.tab--active {
     color: #2F3035;
     font-weight: 700;
+    font-family: "SFProDisplay-Bold",
+        sans-serif;
+
 
     span {
         display: inline-block;
