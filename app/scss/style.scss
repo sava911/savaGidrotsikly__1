@@ -3,6 +3,7 @@
 @import "slick";
 @import "rengSlider";
 @import "formstyler";
+@import "rateyo";
 @import "formstylerTheme";
 @import "fonts";
 
@@ -891,7 +892,22 @@
 
 .tabs-wrapper {}
 
-.tabs {}
+.filter__item-drop {
+    margin-bottom: 20px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/arrow-drop.svg);
+        left: 0;
+        bottom: 4px;
+        width: 16px;
+        height: 8px;
+    }
+}
+
+.filter__item-drop--active {}
 
 .aside-filter__tabs {
     display: flex;
@@ -928,6 +944,28 @@
 
 
 
+.aside-filter__item-drop {
+    margin: 40px 0;
+}
+
+.catalog__inner {}
+
+.catalog__inner-aside {}
+
+.aside-filter {}
+
+.tabs-wrapper {}
+
+.tabs {}
+
+.aside-filter__tabs {}
+
+.tab {}
+
+.aside-filter__tab {}
+
+.tab--active {}
+
 .tabs-container {}
 
 .tabs-content {}
@@ -935,5 +973,28 @@
 .aside-filter__tabs--content {}
 
 .tabs-contant--active {}
+
+.aside-filter__form {}
+
+.aside-filter__list {}
+
+.aside-filter__item-drop {}
+
+.aside-filter__item-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 26px;
+    font-family: "SFProDisplay-Semibold",
+        sans-serif;
+}
+
+.aside-filter__content {}
+
+.aside-filter__content-box {}
+
+.filter-style {}
+
+.aside-filter__item-list {}
 
 @import "media";

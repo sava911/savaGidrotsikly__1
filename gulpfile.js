@@ -39,6 +39,7 @@ function scripts() {
     'app/js/slick.js',
     'app/js/ion.rangeSlider.min.js',
     'app/js/jquery.formstyler.min.js',
+    'app/js/jquery.rateyo.min.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
