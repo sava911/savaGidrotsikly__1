@@ -893,21 +893,27 @@
 .tabs-wrapper {}
 
 .filter__item-drop {
-    margin-bottom: 20px;
     position: relative;
+    cursor: pointer;
 
     &::before {
         content: '';
         position: absolute;
-        background-image: url(../images/arrow-drop.svg);
+        background-image: url(../images/arrow-drop-Back.svg);
+        background-repeat: no-repeat;
         left: 0;
-        bottom: 4px;
+        bottom: 5px;
         width: 16px;
         height: 8px;
+        transform: rotate(0deg);
     }
 }
 
-.filter__item-drop--active {}
+.filter__item-drop--active {
+    &::before {
+        transform: rotate(180deg);
+    }
+}
 
 .aside-filter__tabs {
     display: flex;
@@ -954,21 +960,6 @@
 
 .aside-filter {}
 
-.tabs-wrapper {}
-
-.tabs {}
-
-.aside-filter__tabs {}
-
-.tab {}
-
-.aside-filter__tab {}
-
-.tab--active {}
-
-.tabs-container {}
-
-.tabs-content {}
 
 .aside-filter__tabs--content {}
 
@@ -989,12 +980,87 @@
         sans-serif;
 }
 
-.aside-filter__content {}
+.aside-filter__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
 
-.aside-filter__content-box {}
+.aside-filter__content-box {
+    width: 50%;
+}
 
-.filter-style {}
+.aside-filter__label {
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.jq-checkbox,
+.jq-radio {
+    background: #fff;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #c4c4c4;
+    border-radius: 1px;
+    box-shadow: none;
+    vertical-align: -1px;
+    margin: 0 8px 0 0;
+
+
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+    background: #1C62cd;
+    border: none;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+    width: 8px;
+    height: 4px;
+    margin: 3px 0 0 3px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+
+    transform: rotate(-50deg);
+    /* transform: rotate(0);
+    width: 8px;
+    height: 6px;
+    margin: 4px 0 0 3px;
+    border-bottom: none;
+    border-left: none;
+    background-image: url('../images/chech-icon.svg'); */
+}
+
+.jq-radio.checked .jq-radio__div {
+    width: 8px;
+    height: 4px;
+    margin: 3px 0 0 3px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+
+    transform: rotate(-50deg);
+    /*   width: 0;
+    height: 0;
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+
+    box-shadow: none; */
+}
+
+.aside-filter__content.aside-filter__content-radio {
+    flex-wrap: nowrap
+}
 
 .aside-filter__item-list {}
+
+
+
+
+.irs--flat {
+    width: 100%;
+}
 
 @import "media";
